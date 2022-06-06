@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Button.css"
+import "../assets/css/Button.css"
 const STYLES = [
     "btn--primary--solid",
     "btn--warning--solid",
@@ -15,6 +15,8 @@ const SIZES = [
     "btn--medium",
     "btn--large"
 ]
+
+const PADDINGS =[]
 
 const Button = ({children, type, onClick, buttonStyle, buttonSize}) => {
 

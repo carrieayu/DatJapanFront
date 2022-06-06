@@ -1,11 +1,10 @@
-import './App.css';
 import Button from './components/Button';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button buttonStyle="btn-primary-outline" buttonSize="btn--large"> CLICK </Button>
+        <Button buttonStyle="btn--danger--outline" buttonSize="btn--large"> Login </Button>
       </header>
     </div>
   );
