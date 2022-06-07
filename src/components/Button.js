@@ -1,5 +1,7 @@
-import React, {useState} from 'react';
+
+import React from 'react';
 import "./Button.css"
+
 const STYLES = [
     "btn--primary--solid",
     "btn--warning--solid",
@@ -29,14 +31,10 @@ const ICON = [
     "btn-iconRight"
 ]
 
-// const DISABLE = () => {
-//     if 
-// }
 
 
-const Button = ({children, type, onClick, buttonStyle, buttonSize, buttonBorder, iconPlace, disabled}) => {
+const Button = ({children, type, onClick, buttonStyle, buttonSize, buttonBorder, iconPlace}) => {
 
-    const [disable, setDisabled] = useState(disabled);
 
     const checkButtonSyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
 
@@ -46,13 +44,13 @@ const Button = ({children, type, onClick, buttonStyle, buttonSize, buttonBorder,
 
     const checkIconPlace = ICON.includes(iconPlace) ? iconPlace : ICON[0];
 
-    // const checkDisable = DISABLE.includes(disabled) ? disabled : DISABLE[0];
+  
     
 
 
 
     return (
-        <button className={`btn ${checkButtonSyle} ${checkButtonSize} ${checkButtonBorder} ${checkIconPlace}`} onClick={onClick} type={type}>
+        <button className={`btn ${checkButtonSyle} ${checkButtonSize} ${checkButtonBorder} ${checkIconPlace}`} type={type}>
         {children}
         </button>
     );
