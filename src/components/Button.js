@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Button.css"
 const STYLES = [
     "btn--primary--solid",
@@ -13,18 +13,47 @@ const STYLES = [
 
 const SIZES = [
     "btn--medium",
-    "btn--large"
+    "btn--large",
+    "btn--small",
 ]
 
-const Button = ({children, type, onClick, buttonStyle, buttonSize}) => {
+const RADIUS = [
+    "btn-semiCircle",
+    "btn-circle",
+    "btn-styled1",
+    "btn-styled2"
+]
+
+const ICON = [
+    "btn-iconLeft",
+    "btn-iconRight"
+]
+
+// const DISABLE = () => {
+//     if 
+// }
+
+
+const Button = ({children, type, onClick, buttonStyle, buttonSize, buttonBorder, iconPlace, disabled}) => {
+
+    const [disable, setDisabled] = useState(disabled);
 
     const checkButtonSyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
 
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+    
+    const checkButtonBorder = RADIUS.includes(buttonBorder) ? buttonBorder : RADIUS[0];
+
+    const checkIconPlace = ICON.includes(iconPlace) ? iconPlace : ICON[0];
+
+    // const checkDisable = DISABLE.includes(disabled) ? disabled : DISABLE[0];
+    
+
+
 
     return (
-        <button className={`btn ${checkButtonSyle} ${checkButtonSize}`} onClick={onClick} type={type}>
-            {children}
+        <button className={`btn ${checkButtonSyle} ${checkButtonSize} ${checkButtonBorder} ${checkIconPlace}`} onClick={onClick} type={type}>
+        {children}
         </button>
     );
 }
