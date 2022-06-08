@@ -1,6 +1,6 @@
 :root {
     --primary: #12abb1;
-    --warning: #ffd028;
+    --secondary: #fc9b00;
     --danger: #eb3f27;
     --success: #75fa83;
     --white: #fdfdfd;
@@ -10,7 +10,6 @@
 .btn {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    border-radius: 25px;
     padding: 20px;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -26,8 +25,8 @@
     border: none;
 }
 
-.btn--warning--solid {
-    background-color: var(--warning);
+.btn--secondary--solid {
+    background-color: var(--secondary);
     color: var(--white);
     border: none;
 }
@@ -46,34 +45,79 @@
 
 .btn--primary--outline {
     background-color: transparent;
-    border: 2px solid var(--primary);
+    border: transparent;
     color: var(--primary)
 }
 
-.btn--warning--outline {
+.btn--secondary--outline {
     background-color: transparent;
-    border: 2px solid var(--warning);
-    color: var(--warning)
+    border: transparent;
+    color: var(--secondary)
 }
 
 .btn--danger--outline {
     background-color: transparent;
-    border: 2px solid var(--danger);
+    border: transparent;
     color: var(--danger)
 }
 
 .btn--success--outline {
     background-color: transparent;
-    border: 2px solid var(--success);
+    border: transparent;
     color: var(--success)
 }
 
+.btn--small {
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
 .btn--medium {
-    padding: 10px 20px;
+    padding: 15px 15px;
     font-size: 18px;
 }
 
 .btn--large {
-    padding: 15px 30px;
+    padding: 20px 20px;
     font-size: 20px;
+}
+
+.btn--exlarge {
+    padding: 25px 25px;
+    font-size: 25px;
+}
+
+.btn-semiCircle {
+    border-radius: 25px;
+}
+
+.btn-circle {
+    border-radius: 100px;
+}
+
+.btn-styled1 {
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.btn-styled2 {
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.btn-iconLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.btn-iconRight {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
 }

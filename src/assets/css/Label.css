@@ -1,0 +1,109 @@
+:root {
+    --primary: #12abb1;
+    --warning: #ffd028;
+    --danger: #eb3f27;
+    --success: #75fa83;
+    --white: #fdfdfd;
+    --dark: #181717;
+}
+
+.label {
+    font-family: "Roboto", sans-serif;
+    color: var(--dark);
+}
+
+.lbl-fontExSmall {
+    font-size: 18px;
+}
+
+.lbl-fontSmall {
+    font-size: 30px;
+}
+
+.lbl-fontMedium {
+    font-size: 60px;
+}
+
+.lbl-fontLarge {
+    font-size: 100px;
+}
+
+.lbl-fontExLarge {
+    font-size: 150px;
+}
+
+.lbl-small {
+    padding: 10px 20px;
+}
+
+.lbl-medium {
+    padding: 15px 30px;    
+}
+
+.lbl-large {
+    padding: 20px 40px;  
+}
+
+.lbl-exlarge {
+    padding: 25px 45px;
+}
+
+.lbl-iconLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.lbl-iconRight {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.lbl-italic {
+    font-style: italic;
+}
+
+.lbl-bold {
+    font-style: bold;
+}
+
+.lbl-regular {
+    font-style: normal;
+}
+
+.lbl-serif {
+    font-family: serif;
+}
+
+.lbl-sans-serif {
+    font-family: sans-serif;
+}
+
+.lbl-monospace {
+    font-family: monospace;
+}
+
+.lbl-cursive {
+    font-family: cursive;
+}
+
+.lbl-fantasy {
+    font-family: fantasy;
+}
+
+.lbl-center{
+    text-align: center;
+}
+
+.lbl-left {
+    text-align: start;
+}
+
+.lbl-right {
+    text-align: end;
+}
