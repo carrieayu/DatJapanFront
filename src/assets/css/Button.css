@@ -68,25 +68,28 @@
 }
 
 .btn--small {
-    padding: 10px 10px;
+    padding: 5px 25px;
     font-size: 15px;
 }
 
 .btn--medium {
-    padding: 15px 15px;
-    font-size: 18px;
-}
-
-.btn--large {
-    padding: 20px 20px;
-    font-size: 20px;
-}
-
-.btn--exlarge {
-    padding: 25px 25px;
+    padding: 5px 30px;
     font-size: 25px;
 }
 
+.btn--large {
+    padding: 5px 40px;
+    font-size: 30px;
+}
+
+.btn--exlarge {
+    padding: 5px 60px;
+    font-size: 40px;
+}
+
+.btn-box{
+    border-radius: 0%;
+}
 .btn-semiCircle {
     border-radius: 25px;
 }

@@ -1,0 +1,50 @@
+:root {
+    --primary: #12abb1;
+    --secondary: #fc9b00;
+    --danger: #eb3f27;
+    --success: #75fa83;
+    --white: #fdfdfd;
+    --dark: #181717;
+}
+
+.cardsimple {
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 3px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    
+}
+
+.cardButtons {
+    display: flex;
+    /* justify-items: center; */
+}
+
+.card-white {
+    background-color: var(--white);
+}
+
+.card-black {
+    background-color: var(--dark);
+}
+
+.card-primary {
+    background-color: var(--primary);
+}
+
+.card-secondary {
+    background-color: var(--secondary);
+}
+
+.card-red {
+    background-color: var(--danger);
+}
+
+.card-green {
+    background-color: var(--success);
+}
