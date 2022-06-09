@@ -17,13 +17,15 @@ const SIZES = [
     "btn--medium",
     "btn--large",
     "btn--small",
+    "btn--exlarge"
 ]
 
 const RADIUS = [
+    "btn-box",
     "btn-semiCircle",
     "btn-circle",
     "btn-styled1",
-    "btn-styled2"
+    "btn-styled2",
 ]
 
 const ICON = [
