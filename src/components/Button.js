@@ -11,6 +11,8 @@ const STYLES = [
     "btn--warning--outline",
     "btn--danger--outline",
     "btn--success--outline",
+    'btn--secondary--solid',
+    'btn--primary--white',
 ]
 
 const SIZES = [
