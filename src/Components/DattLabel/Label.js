@@ -1,5 +1,5 @@
 import React from 'react';
-import "../assets/css/Label.css";
+import "../../assets/css/Label.css"
 
 const FONTSIZE = [
     "lbl-fontExSmall",

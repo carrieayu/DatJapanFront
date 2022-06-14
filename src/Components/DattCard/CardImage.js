@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import "../assets/css/Card.css"
+import "../../assets/css/CardImage.css"
 
 const Title = styled.h2`
   font-weight: 300;
@@ -61,15 +61,23 @@ const BACKGROUND = [
     "card-green"
 ]
 
+const StyledPhoto = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: ${(props) => `1px solid ${props.theme.border.cool}`};
+  `
 
 
-const Card = ({props, title, date, description, actions, cardColor}) => {
+
+const CardImage = ({props, title, date, description, actions, cardColor}) => {
 
     const checkCardColor = BACKGROUND.includes(cardColor) ? cardColor :BACKGROUND[0];
 
   
     return (
-        <div className={`cardsimple ${checkCardColor}`}>  
+        <div className={`cardimage ${checkCardColor}`}>  
+            <StyledPhoto src="https://www.pinterest.com/pin/345229127670671685/" />
             <Title>{title}</Title>
             <Date>{date}</Date>
             <Description>{description}</Description>
@@ -85,4 +93,4 @@ const Card = ({props, title, date, description, actions, cardColor}) => {
 
 
 
-export default Card
+export default CardImage;

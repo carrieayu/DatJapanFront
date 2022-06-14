@@ -63,8 +63,9 @@
 
 .btn--success--outline {
     background-color: transparent;
-    border: transparent;
-    color: var(--success)
+    border-width: 3px;
+    border-color: var(--white);
+    color: var(--white)
 }
 
 .btn--small {

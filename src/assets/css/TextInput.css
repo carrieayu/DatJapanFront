@@ -1,0 +1,64 @@
+:root {
+    --primary: #12abb1;
+    --secondary: #fc9b00;
+    --danger: #eb3f27;
+    --success: #75fa83;
+    --white: #fdfdfd;
+    --dark: #181717;
+}
+
+.textinput {
+    display: flex;
+    position: inherit;
+    align-self: center;
+}
+
+.txt-fontDanger {
+    color: var(--danger);
+}
+
+.txt-fontPrimary {
+    color: var(--primary);
+}
+
+.txt-fontDark {
+    color: var(--dark);
+}
+
+.txt-small {
+    width: 200px;
+    height: 25px;
+}
+
+.txt-medium {
+    width: 350px;
+    height: 30px;
+}
+
+.txt-large {
+    width: 500px;
+    height: 30px;
+}
+
+.txt-semiCircle {
+    border-radius:  0.5em 0.5em;
+}
+
+.txt-box {
+    border-radius: none;
+}
+
+.txt-pad0{
+    padding: none;
+}
+.txt-pad10 {
+    padding: 10px;
+}
+
+.txt-pad15 {
+    padding: 15px;
+}
+
+.txt-pad20 {
+    padding: 20px;
+}
